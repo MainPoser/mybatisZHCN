@@ -260,7 +260,7 @@ public class XMLConfigBuilder extends BaseBuilder {
       //3.作为方法参数传递的属性最后被读取, 它也会覆盖任一已经存在的完全一样的属性,这些属性可能是从 properties 元素体内和资源/url 属性中加载的。
       //传入方式是调用构造函数时传入，public XMLConfigBuilder(Reader reader, String environment, Properties props)
 
-      //1.XNode.getChildrenAsProperties函数方便得到孩子所有Properties
+      //1.XNode.getChildrenAsProperties函数方便得到子节点所有Properties
       Properties defaults = context.getChildrenAsProperties();
       //2.然后查找resource或者url,加入前面的Properties
       String resource = context.getStringAttribute("resource");
